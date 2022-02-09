@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="http://cdn.jupyter.org/thebe/notebook4.1.0/ipywidgets4.0.3/static/main-built.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+</head>
+<body>
+    <script type="text/x-thebe-config">
+        {
+            bootstrap: true,
+            requestKernel: true,
+            mountActivateWidget: false,
+            mountStatusWidget: false,
+            binderOptions: {
+                repo: "binder-examples/requirements",
+                ref: "master",
+            },
+            // kernelOptions: {
+                // name: "python3",
+                // kernelName: "python3",
+                // path: "."
+                // notebook server configuration; not needed with binder
+                // serverSettings: {
+                //     "baseUrl": "http://localhost:8888",
+                //    "token": "7807cb10a5b2a2208ec630c7fbde4a3c955d87082c790aea"
+                // }
+            // },
+        }
+      </script>
+    <!-- <div class="thebe-activate"></div> -->
+    <!-- <div class="thebe-status"></div> -->
+    <pre data-executable="true" data-language="python">print("Hello!")</pre>
+   
+</body>
+</html>
